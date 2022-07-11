@@ -33,8 +33,8 @@ DigitalPin.P0
 basic.forever(function () {
     MyInput = keypad.getKeyString()
     if (MyInput != "") {
+        basic.showString(keypad.getKeyString())
         Mypass += MyInput
-        basic.showString(MyInput)
         basic.clearScreen()
     }
 })
